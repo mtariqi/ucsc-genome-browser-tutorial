@@ -3,9 +3,135 @@
 ## Overview
 This tutorial demonstrates how to visualize custom genomic data using the UCSC Genome Browser. You'll learn to upload a BED format file and create shareable links for collaborative analysis.
 
-## Contents
-- `test.bed` - Sample BED file containing custom track data for chromosome 22
-- `README.md` - This instruction guide
+## 📁 Repository Structure
+
+```
+ucsc-genome-browser-tutorial/
+│
+├── README.md                          # This comprehensive tutorial guide
+├── test.bed                           # Sample BED file with custom tracks
+│
+├── data/                              # Sample data files
+│   ├── test.bed                       # Original BED file (chr22 tracks)
+│   └── examples/                      # Additional example files
+│       ├── example_simple.bed         # Minimal BED example
+│       ├── example_colored.bed        # Multi-track colored example
+│       └── example_genes.bed          # Gene annotation example
+│
+├── screenshots/                       # Visual guides
+│   ├── 01_gateway.png                 # UCSC Gateway page
+│   ├── 02_add_custom_tracks.png       # Add custom tracks button
+│   ├── 03_upload_file.png             # File upload interface
+│   ├── 04_track_display.png           # Browser view with tracks
+│   ├── 05_my_sessions.png             # Sessions menu
+│   ├── 06_save_session.png            # Save session dialog
+│   └── 07_share_link.png              # Generated shareable link
+│
+├── docs/                              # Additional documentation
+│   ├── bed_format_guide.md            # Detailed BED format specifications
+│   ├── troubleshooting.md             # Extended troubleshooting guide
+│   ├── advanced_features.md           # Advanced UCSC Browser features
+│   └── faq.md                         # Frequently asked questions
+│
+├── scripts/                           # Utility scripts
+│   ├── validate_bed.py                # Python script to validate BED files
+│   ├── convert_coordinates.py         # Coordinate conversion (hg19↔hg38)
+│   ├── generate_bed.py                # Generate sample BED files
+│   └── README.md                      # Scripts documentation
+│
+├── examples/                          # Complete example workflows
+│   ├── basic_workflow/
+│   │   ├── README.md                  # Basic workflow tutorial
+│   │   ├── input.bed                  # Input data
+│   │   └── session_link.txt           # Resulting session link
+│   │
+│   ├── multiple_tracks/
+│   │   ├── README.md                  # Multiple tracks tutorial
+│   │   ├── track1.bed                 # First track
+│   │   ├── track2.bed                 # Second track
+│   │   └── combined.bed               # Combined tracks file
+│   │
+│   └── annotation_project/
+│       ├── README.md                  # Annotation project example
+│       ├── genes.bed                  # Gene annotations
+│       ├── variants.bed               # Variant positions
+│       └── regulatory.bed             # Regulatory elements
+│
+├── templates/                         # BED file templates
+│   ├── template_basic.bed             # Basic track template
+│   ├── template_scored.bed            # Scored features template
+│   ├── template_colored.bed           # Colored tracks template
+│   └── README.md                      # Template usage guide
+│
+├── .gitignore                         # Git ignore file
+├── LICENSE                            # License information
+└── CONTRIBUTING.md                    # Contribution guidelines
+```
+
+## 📄 File Descriptions
+
+### Root Directory
+- **README.md**: Main tutorial and comprehensive guide (this file)
+- **test.bed**: Primary sample BED file used in the tutorial with two custom tracks
+
+### `/data` Directory
+Contains all sample data files used in tutorials and examples:
+- **test.bed**: Copy of the main sample file
+- **examples/**: Additional BED file examples for different use cases
+  - Simple single-track examples
+  - Multi-track colored visualizations
+  - Gene annotation examples
+
+### `/screenshots` Directory
+Visual guides showing each step of the tutorial:
+- Sequential numbered screenshots (01-07)
+- Shows UCSC interface at each step
+- Helps users verify they're following correctly
+- Useful for troubleshooting
+
+### `/docs` Directory
+Extended documentation and guides:
+- **bed_format_guide.md**: In-depth BED format specifications (3-12 column formats)
+- **troubleshooting.md**: Common issues and solutions
+- **advanced_features.md**: Track hubs, bigBed, custom colors, etc.
+- **faq.md**: Answers to frequently asked questions
+
+### `/scripts` Directory
+Python utilities for working with BED files:
+- **validate_bed.py**: Check BED file format validity
+- **convert_coordinates.py**: Convert between genome assemblies (liftOver)
+- **generate_bed.py**: Create sample BED files for testing
+- Each script includes usage examples and documentation
+
+### `/examples` Directory
+Complete workflow examples with step-by-step instructions:
+- **basic_workflow/**: Single track upload example
+- **multiple_tracks/**: Working with multiple simultaneous tracks
+- **annotation_project/**: Real-world genomic annotation example
+
+### `/templates` Directory
+Ready-to-use BED file templates:
+- Various template formats for different needs
+- Copy, modify, and use for your own data
+- Includes usage instructions
+
+## 🎯 Quick Start Files
+
+For the assignment, you only need:
+- ✅ `README.md` (main tutorial)
+- ✅ `test.bed` (sample data)
+
+## 📊 Minimal vs Complete Repository
+
+### Minimal Repository (Assignment)
+```
+ucsc-tutorial/
+├── README.md
+└── test.bed
+```
+
+### Complete Repository (Full Tutorial)
+All directories and files listed above for comprehensive learning resource.
 
 ## About the Data
 The `test.bed` file contains two custom tracks:
