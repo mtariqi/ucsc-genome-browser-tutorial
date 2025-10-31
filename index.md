@@ -113,3 +113,34 @@ For detailed guidance:
 ---
 
 ## 📁 Repository Structure
+
+```
+ucsc-genome-browser-tutorial/
+├── test.bed
+├── index.md
+├── README.md
+└── assets/
+```
+
+
+---
+
+## 🧾 Citation & References
+> Islam, M. T. (2025). *UCSC Genome Browser Tutorial for Bioinformatics Education.*  
+> GitHub Repository: [https://github.com/mtariqi/ucsc-genome-browser-tutorial](https://github.com/mtariqi/ucsc-genome-browser-tutorial)
+
+---
+
+## 📬 Contact
+For questions, collaboration, or feedback:  
+📧 [tariqul@scired.com](mailto:tariqul@scired.com)
+
+---
+
+<div align="center">
+
+✨ **Happy Genome Exploring!** ✨  
+*Developed with 💙 for the Northeastern Bioinformatics Community.*
+
+</div>
+
