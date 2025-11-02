@@ -12,6 +12,82 @@ You’ll learn to upload BED files, display custom annotations, and generate **s
 Ideal for **bioinformatics students**, **educators**, and **researchers** focusing on reproducible genome visualization.
 
 ---
+# 🧬 UCSC Genome Browser Custom Track Report
+
+**Author:** Md Tariqul Islam (Tariq)  
+**Institution:** Northeastern University – Bioinformatics Program  
+**Contact:** tariqul@scired.com  
+**Date:** November 2025  
+
+---
+
+## 🎯 Objective
+The goal of this activity was to explore the **UCSC Genome Browser** and visualize **custom genomic tracks** using a BED file.  
+This hands-on exercise demonstrates how to integrate personal data with reference genome annotations, manage browser sessions, and generate shareable visualization links.
+
+---
+
+## 🧪 Steps Performed
+
+### 1. Launching the UCSC Genome Browser
+- Navigated to [UCSC Genome Browser Gateway](https://genome.ucsc.edu/cgi-bin/hgGateway)  
+- Selected assembly **Human (GRCh38/hg38)**  
+- Specified genomic region:  
+
+
+### 2. Adding Custom Tracks
+- Clicked **“Add custom tracks”**
+- Uploaded `test.bed` containing two tracks:
+- **Spacer** (Blue ticks every 10,000 bases)
+- **Even** (Red ticks every 100 bases, skipping 100)
+- Confirmed successful parsing of the BED file
+- Clicked **“Go to Genome Browser”** to visualize the tracks
+
+### 3. Visual Confirmation
+- Both custom tracks appeared correctly aligned with genomic features:
+- **Spacer track** (Blue): evenly spaced intervals  
+- **Even track** (Red): closely packed smaller markers
+- Verified alignment with **RefSeq**, **GENCODE**, and **OMIM** annotations.
+
+![UCSC Genome Browser Visualization](./screenshots/08_ucsc_browser_view.png)
+
+---
+
+## 💡 Reflection
+
+This exercise provided valuable insight into how genomic data visualization enhances understanding of **genome structure and annotations**.  
+I learned how to:
+- Upload and visualize personal data alongside public tracks  
+- Modify visualization modes (hide/dense/pack/full)  
+- Generate **session URLs** for reproducible sharing  
+- Understand how BED file formatting impacts display output  
+
+This activity bridges theory and practice by demonstrating how bioinformatics workflows integrate data exploration and visualization.
+
+---
+
+## 📊 Key Results
+
+| Track Name | Color | Description | Region |
+|-------------|--------|--------------|---------|
+| spacer | Blue (0,0,255) | Ticks every 10kb | chr22:20,100,000–20,140,000 |
+| even | Red (255,0,0) | Ticks every 100bp | chr22:20,100,000–20,140,000 |
+
+---
+
+## 🔗 References
+- UCSC Genome Browser: https://genome.ucsc.edu/  
+- Custom Track Help: https://genome.ucsc.edu/goldenPath/help/customTrack.html  
+- Sharing Sessions & URLs: https://genome-blog.gi.ucsc.edu/blog/2021/08/13/sharing-data-with-sessions-and-urls/  
+- BED Format Specification: https://genome.ucsc.edu/FAQ/FAQformat.html#format1  
+
+---
+
+**Repository:** [mtariqi/ucsc-genome-browser-tutorial](https://github.com/mtariqi/ucsc-genome-browser-tutorial)  
+**License:** MIT License  
+
+---
+
 
 ## 📁 Repository Structure
 
