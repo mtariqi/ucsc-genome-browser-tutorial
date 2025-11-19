@@ -12,8 +12,6 @@ You’ll learn to upload BED files, display custom annotations, and generate **s
 Ideal for **bioinformatics students**, **educators**, and **researchers** focusing on reproducible genome visualization.
 
 ---
-# 🧬 UCSC Genome Browser Custom Track Report
-
 **Author:** Md Tariqul Islam (Tariq)  
 **Institution:** Northeastern University – Bioinformatics Program  
 **Contact:** tariqul@scired.com  
